@@ -1,0 +1,58 @@
+files:
+  - "!lib"
+  - "!cli"
+  - "!doc"
+  - "!node_modules"
+  - "test"
+eslint:
+   env: node
+csshint: {}
+htmlcs: {
+  charset-utf8: true,
+  asset-type: false,
+  bool-attribute-value: false,
+  button-name: false,
+  button-type: false,
+  charset: true,
+  css-in-head: true,
+  doctype: false,
+  html-lang: false,
+  ie-edge: false,
+  img-alt: false,
+  img-src: false,
+  img-title: false,
+  img-width-height: false,
+  indent-char: false,
+  lowercase-class-with-hyphen: false,
+  lowercase-id-with-hyphen: false,
+  nest: false,
+  rel-stylesheet: false,
+  script-in-tail: false,
+  title-required: false,
+  unique-id: false,
+  no-duplication-id-and-name: false,
+  no-meta-css:{
+    threshold: 4,
+    minlen: 4
+  },
+  no-hook-class:{
+    keys: "/[-_#](?:js|hook)[-_#]/",
+  },
+  max-len: false,
+  no-bom: false,
+  viewport: true,
+  label-for-input: false,
+  attr-lowercase: false,
+  attr-no-duplication: false,
+  attr-unsafe-chars: false,
+  attr-value-double-quotes: false,
+  id-class-ad-disabled: false,
+  spec-char-escape: false,
+  self-close: "close",
+  style-disabled: true,
+  tag-pair: false,
+  tagname-lowercase: false,
+  script-content: false,
+  style-content: false,
+  no-jquery: true,
+}

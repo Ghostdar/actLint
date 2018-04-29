@@ -113,8 +113,6 @@ var streams = {
      * @return {Transform} 转换流
      */
     check: function (stream, options) {
-        console.log(stream);
-        return
         return stream
             .pipe(jschecker.exec(options))
             .pipe(csschecker.exec(options))
@@ -176,6 +174,6 @@ exports.run = function (options, done) {
 
     return streams
         .get(options)
-        // .pipe(reporter)
-        // .once('done', done);
+        .pipe(reporter)
+        .once('done', done);
 };

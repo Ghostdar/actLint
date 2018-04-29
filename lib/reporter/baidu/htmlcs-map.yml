@@ -39,3 +39,7 @@ style-disabled: "028"
 tag-pair: "012"
 tagname-lowercase: "010"
 
+
+# 自定义规则
+charset-utf8: "055"
+no-jquery: "056"

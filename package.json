@@ -1,7 +1,7 @@
 {
-  "name": "cplint",
+  "name": "actlint",
   "version": "1.0.0",
-  "description": "cplint",
+  "description": "actlint",
   "main": "index.js",
   "bin": {
     "actlint": "./bin/actlint"
@@ -10,12 +10,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npm install && npm link"
   },
   "author": "neroHua",
   "license": "ISC",
   "dependencies": {
-    "htmlcs": "stable",
     "babel-eslint": "^8.0.1",
     "chalk": "^2.1.0",
     "csscomb": "^4.2.0",
@@ -36,6 +36,8 @@
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-react": "^7.4.0",
+    "htmlcs": "stable",
+    "import-dir": "0.0.1",
     "lesslint": "stable",
     "loophole": "^1.1.0",
     "manis": "^0.3.0",
